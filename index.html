@@ -7,19 +7,23 @@
     <title>Student site</title>
     <style>
         body{
-            background-color: black;
+            background-color:#BFDFEC;
+    background-repeat:repeat-x;
+ background-image:url("https://i.stack.imgur.com/b7z29.png");
+  animation: movement 10s linear infinite; 
         }
         .heading{
             text-align: center;
             font-size: 40px;
-            color: white;
+            color: black;
             font-weight: 300;
         }
         .info{
             /*background-color: rgb(24, 250, 92);*/
             font-size: 20px;
-            color: white;
+            color: black;
             text-align:center;
+            font-weight:bold;
         }
         .sajal{
             border-radius: 50%;
@@ -29,6 +33,40 @@
             display:block;
             margin-top: 20px;
         }
+
+
+@keyframes movement{
+  0% {
+    background-position:0px 0px;
+  }
+  100%{
+    background-position:560px 0px;
+  }
+}
+
+adiv{
+  display:block;
+  position:absolute;
+  font-size:2rem;
+  text-align:center;
+  color:white;
+  border:1px solid white;
+  padding:2rem;
+  border-radius:5px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  margin-top: -50px;
+  margin-left: -100px;
+  padding:2rem;
+
+}
     </style>
 </head>
 <body>
@@ -36,6 +74,7 @@
     <img width=200 height= 200 class= "sajal" src="https://www.filmibeat.com/img/popcorn/profile_photos/sajal-ali-hin-20190528172201-1694.jpg"/>
     <p class="info">Hi I am Azeem Khan</p>
     <p class="info">Let's learn about Git and its operations</p>
+    <div class="centered"></div>
     
 
 </body>
